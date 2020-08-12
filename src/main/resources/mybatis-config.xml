@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--为实体类起别名  -->
+    <typeAliases>
+        <package name="com.lljl.lu.bean" />
+    </typeAliases>
+
+    <!-- 设置分页的方言 -->
+    <!-- <plugins>
+       <plugin interceptor="com.github.pagehelper.PageInterceptor">
+          <property name="helperDialect" value="mysql"/>
+       </plugin>
+    </plugins> -->
+
+    <!--管理映射文件，  -->
+    <!-- <mappers>
+        <package name="com."/>
+    </mappers> -->
+</configuration>
