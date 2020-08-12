@@ -73,18 +73,11 @@
             <version>${spring-version}</version>
         </dependency>
 
-        <!-- Spring web  -->
+        <!-- Spring webmvc  -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring-version}</version>
-        </dependency>
-
-        <!--SpringwebMVC-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>4.3.6.RELEASE</version>
         </dependency>
 
         <!--MyBatis -->
