@@ -74,8 +74,9 @@
                 <td>${uall.name}</td>
                 <c:if test="${uall.age == 1}"><td align="center">男</td></c:if>
                 <c:if test="${uall.age == 0}"><td align="center">女</td></c:if>
-                <td><a href="${pageContext.request.contextPath}/cus/updateEcho?id=${uall.id}&dbf=1">编辑</a> |
-                    <a href="${pageContext.request.contextPath}/lu/getById?id=${uall.id}&dbf=0">查看详情</a></td>
+                <td>
+                    <a href="${pageContext.request.contextPath}/lu/getById?id=${uall.id}&dbf=0">查看详情</a>
+                </td>
             </tr>
         </c:forEach>
 

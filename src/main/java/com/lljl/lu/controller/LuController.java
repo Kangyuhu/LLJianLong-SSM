@@ -31,7 +31,7 @@ public class LuController {
         System.out.println(user.getName());
         System.out.println(user.getId());
 
-        int i = luService.addUser(user);
+        int i = luService.update(user);
         if (i > 0){
             return "redirect:/lu/getUserAll";
         }else {
@@ -78,5 +78,23 @@ public class LuController {
             return "error";
         }
     }
+
+
+    //根据ID修改
+    @RequestMapping("update")
+    public String update(User user){
+
+        System.out.println("111111111111111111111111");
+        System.out.println(user.getName());
+        System.out.println(user.getId());
+
+        int i = luService.addUser(user);
+        if (i > 0){
+            return "redirect:/lu/getUserAll";
+        }else {
+            return "error";
+        }
+    }
+
 
 }

@@ -33,4 +33,8 @@ public class LuServiceImpl implements LuService {
     public List<User> getUserAll() {
         return userMapper.selectByExample(null);
     }
+
+    public int update(User user) {
+        return userMapper.updateByPrimaryKey(user);
+    }
 }

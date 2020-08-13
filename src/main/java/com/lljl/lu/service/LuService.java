@@ -17,5 +17,8 @@ public interface LuService {
     //查找所有
     List<User> getUserAll();
 
+    //根据ID修改
+    int update(User user);
+
 
 }

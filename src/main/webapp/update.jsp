@@ -11,12 +11,11 @@
 <body leftmargin="8" topmargin="8" >
 
 <form name="form" id="form" action="${pageContext.request.contextPath}/lu/addUser" method="post" accept-charset="UTF-8">
-
+    <input id="id" name="id" type="hidden" value="${id}" />&nbsp;
     <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
         <tr bgcolor="#E7E7E7">
             <td height="24" colspan="2" >客户&nbsp;</td>
         </tr>
-
         <tr>
             <td width="80px">姓名：</td>
             <td><input id="name" name="name" type="text" value="${name}" />&nbsp;&nbsp;<span id="name1"></span></td>
@@ -24,9 +23,8 @@
         <tr>
             <td width="80px">性别：</td>
             <td>
-            <c:if test="${age == 1}"><input id="xb" name="age" type="radio" checked="checked"/>男</td></c:if>
-            <c:if test="${age == 0}"><input id="xb" name="age" type="radio" checked="checked"/>女</td></c:if>
-
+                <input id="xb1" name="age" type="radio" value="1" <c:if test='${age == 1}'> checked='checked' </c:if> />男
+                <input id="xb0" name="age" type="radio" value="0" <c:if test='${age == 0}'> checked='checked' </c:if> />女
             </td>
         </tr>
 
