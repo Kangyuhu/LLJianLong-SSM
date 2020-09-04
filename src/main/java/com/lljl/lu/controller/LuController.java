@@ -31,7 +31,7 @@ public class LuController {
         System.out.println(user.getName());
         System.out.println(user.getId());
 
-        int i = luService.update(user);
+        int i = luService.addUser(user);
         if (i > 0){
             return "redirect:/lu/getUserAll";
         }else {
@@ -88,7 +88,7 @@ public class LuController {
         System.out.println(user.getName());
         System.out.println(user.getId());
 
-        int i = luService.addUser(user);
+        int i = luService.update(user);
         if (i > 0){
             return "redirect:/lu/getUserAll";
         }else {
