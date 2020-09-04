@@ -40,29 +40,5 @@
         <!-- 相对路径+前缀+视图名+后缀：locahost:8080/项目名/index.jsp -->
     </bean>
 
-    <!--配置文件上传解析器 吐过需要,你就打开注释commons-io commons-fileupload-->
-    <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="600000000"></property>
-        <property name="maxUploadSizePerFile" value="20000000"></property>
-    </bean>-->
-
-    <!-- <mvc:interceptors>
-       <mvc:interceptor>
-           被拦截的请求/*,/**,/user/*
-           <mvc:mapping path="/**"/>
-           指定不被拦截的请求
-           <mvc:exclude-mapping path="/login"/>
-           <bean class="com.offcn.utils.LoginIter"></bean>
-       </mvc:interceptor>
-       <mvc:interceptor>
-           /*,/**,/user/*
-           <mvc:mapping path="/**"/>
-           <mvc:exclude-mapping path="/login"/>
-           <bean class="com.offcn.utils.LoginIter2"></bean>
-       </mvc:interceptor>
-    </mvc:interceptors>
-
-    实例化自定义异常处理器
-    <bean class="com.offcn.utils.MyExpResolver"></bean> -->
 
 </beans>
